@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Errors -->
+    <string name="error_network">Ошибка, проверьте подключение к интернету</string>
+    <string name="error_server">Сервер временно не доступен, попробуйте позже</string>
+    <string name="error_validation">Что-то пошло не так, информация передана в поддержку</string>
+    <string name="error_unknown">Что-то пошло не так, информация передана в поддержку</string>
+
+    <!-- Types Training -->
+    <string name="cardio">Кардио</string>
+    <string name="strength">Силовая</string>
+    <string name="stretching">Растяжка</string>
+    <string name="unknown">Неизвестная</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trainings_graph"
+    app:startDestination="@id/trainingListFragment">
+
+    <fragment
+        android:id="@+id/trainingListFragment"
+        android:name="kolsa.test.feature_training.presentation.workout_list.TrainingListFragment"
+        android:label="fragment_training_list"
+        tools:layout="@layout/fragment_training_list" >
+        <action
+            android:id="@+id/action_trainingListFragment_to_trainingFragment"
+            app:destination="@id/trainingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/trainingFragment"
+        android:name="kolsa.test.feature_training.presentation.workout_screen.TrainingFragment"
+        android:label="fragment_training"
+        tools:layout="@layout/fragment_training" />
+
+
+</navigation>

@@ -44,6 +44,8 @@ dependencies {
     implementation(project(":data"))
 
     implementation(libs.hilt.android)
+    implementation(libs.androidx.legacy.support.v4)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
     ksp(libs.hilt.compiler)
 
     implementation(libs.glide)
