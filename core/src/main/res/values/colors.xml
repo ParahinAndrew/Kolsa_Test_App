@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="text_white_80">#CCFFFFFF</color>
+    <color name="text_white_70">#B3FFFFFF</color>
+    <color name="text_white_50">#80FFFFFF</color>
+    <color name="text_green">#32DD9F</color>
+    <color name="text_black">#FF000000</color>
+    <color name="text_grey">#B2B2B2</color>
+
+
+    <color name="main_dark_background">#1C1C1E</color>            <!-- Screen Background -->
+    <color name="create_container_30">#B31C1C1C</color>           <!-- try 4D -->
+    <color name="container_dark_background_50">#802C2C2E</color>  <!-- BottomBar Container -->
+    <color name="container_dark_background">#2C2C2E</color>       <!-- History Item Container, pay inf container, language container, settings container -->
+    <color name="background_secondary_dark_30">#4D000000</color>  <!-- контейер для элемнтов списка возможностей после покупки -->
+    <color name="background_send_generate_30">#4D1C1C1C</color>   <!-- контейер для поля и кнопки генерации -->
+    <color name="container_white_30_background">#4DFFFFFF</color> <!-- контейер для поля ввода запроса -->
+    <color name="item_green_24_background">#4C32DD9F</color>      <!-- цвет активного элемента нижней навигации -->
+    <color name="background_white">#FFFFFFFF</color>              <!-- цвет фона для оплаты (наверное заменить на обычный) -->
+    <color name="background_green">#36A96B</color>                <!-- цвет фона в настройках сверху контейнер -->
+
+
+
+</resources>
