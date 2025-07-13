@@ -10,7 +10,7 @@ import kolsa.test.data.Repository
 
 @Module
 @InstallIn(ViewModelComponent::class)
-object UseCaseModule {
+object UseCasesModule {
 
     @Provides
     @ViewModelScoped

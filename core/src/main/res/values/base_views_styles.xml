@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Core.ShapeAppearance" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/default_corners</item>
+    </style>
+
+</resources>

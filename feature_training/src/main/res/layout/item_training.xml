@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/secondary_container_background"
+    android:padding="@dimen/default_padding">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/previewImg"
+        style="@style/TrainingList.TrainingItem.PreviewImage.ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText"
+        style="@style/TrainingList.TrainingItem.Title.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/previewImg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Зарядка 6. Улучшаем осанку" />
+
+    <TextView
+        android:id="@+id/typeText"
+        style="@style/TrainingList.TrainingItem.Type.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginVertical="@dimen/small_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/previewImg"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        tools:text="@string/stretching" />
+
+    <TextView
+        android:id="@+id/durationText"
+        style="@style/TrainingList.TrainingItem.Duration.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginVertical="@dimen/small_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/previewImg"
+        app:layout_constraintTop_toBottomOf="@+id/typeText"
+        tools:text="45 минут" />
+
+
+    <TextView
+        android:id="@+id/descriptionText"
+        style="@style/TrainingList.TrainingItem.Description.TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginVertical="@dimen/small_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/previewImg"
+        app:layout_constraintTop_toBottomOf="@+id/durationText"
+        tools:text="Укрепляем позвоночник для красивой осанки. Также уделим внимание коленям и голеностопу." />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

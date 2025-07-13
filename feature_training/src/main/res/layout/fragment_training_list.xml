@@ -4,8 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:background="@color/main_dark_background"
     tools:context=".presentation.workout_list.TrainingListFragment">
 
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        style="@style/TrainingList.SearchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/filter_chip_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_view"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/strengthChip"
+            style="@style/TrainingList.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strength" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cardioChip"
+            style="@style/TrainingList.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cardio" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/stretchingChip"
+            style="@style/TrainingList.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stretching" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trainingRV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filter_chip_group"
+        tools:listitem="@layout/item_training" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

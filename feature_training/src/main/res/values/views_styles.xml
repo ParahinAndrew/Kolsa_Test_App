@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Training List -->
+
+
+    <style name="TrainingList.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textAppearance">@style/Core.TextStyle.Bold</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="queryHint">@string/search_hint</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="android:textColorHint">@color/text_white_50</item>
+        <item name="android:background">@drawable/secondary_container_background</item>
+        <item name="cursorColor">@color/text_white</item>
+    </style>
+
+    <style name="TrainingList.Chip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background_selector</item>
+        <item name="android:textColor">@color/chip_text_color_selector</item>
+        <item name="checkedIconTint">@color/chip_checkmark_color_selector</item>
+        <item name="checkedIconVisible">true</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">@color/chip_stroke_color_selector</item>
+    </style>
+
+
+    <!-- Training Item -->
+
+    <style name="TrainingList.TrainingItem.PreviewImage.ImageView" parent="">
+        <item name="android:src">@drawable/ic_no_img</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@color/text_white_50</item>
+        <item name="shapeAppearanceOverlay">@style/Core.ShapeAppearance</item>
+    </style>
+
+    <style name="TrainingList.TrainingItem.Title.TextView" parent="Core.TextStyle.Bold">
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TrainingList.TrainingItem.Type.TextView" parent="Core.TextStyle.Hint">
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TrainingList.TrainingItem.Duration.TextView" parent="Core.TextStyle.Bold">
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TrainingList.TrainingItem.Description.TextView" parent="Core.TextStyle.Bold">
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- Training -->
+
+    <style name="Training.Error.TextView" parent="Core.TextStyle.Bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:text">@string/video_upload_error</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+
+</resources>

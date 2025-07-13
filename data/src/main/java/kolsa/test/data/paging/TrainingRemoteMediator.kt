@@ -1,5 +1,6 @@
 package kolsa.test.data.paging
 
+import android.util.Log
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadType
 import androidx.paging.PagingState
@@ -37,8 +38,13 @@ class TrainingRemoteMediator @Inject constructor(
             }
             MediatorResult.Success(endOfPaginationReached = loadType != LoadType.REFRESH)
         } catch (e: IOException) {
+            Log.e("RemoteMediator", "IOException", e)
             MediatorResult.Error(e)
         } catch (e: HttpException) {
+            Log.e("RemoteMediator", "HttpException", e)
+            MediatorResult.Error(e)
+        } catch (e: Exception) {
+            Log.e("RemoteMediator", "Generic Exception", e)
             MediatorResult.Error(e)
         }
     }

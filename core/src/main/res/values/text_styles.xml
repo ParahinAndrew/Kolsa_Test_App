@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+
+        Здесь должны быть заданы шрифты, размеры и цвета
+
+        Эти базовые стили я использую по всем фичам, добавляя на месте какие-то специфичные вещи
+
+        Пока разделю по цвету и жирности
+
+    -->
+
+
+    <!-- Bold -->
+
+    <style name="Core.TextStyle.Bold" parent="">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+
+    <!-- Normal -->
+
+    <style name="Core.TextStyle.Normal" parent="">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_white_70</item>
+    </style>
+
+
+    <!-- Hint -->
+
+    <style name="Core.TextStyle.Hint" parent="">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_white_50</item>
+    </style>
+
+</resources>

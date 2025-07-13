@@ -12,5 +12,16 @@
     <string name="strength">Силовая</string>
     <string name="stretching">Растяжка</string>
     <string name="unknown">Неизвестная</string>
+    
+    
+    <!-- Training List (Item) -->
+    <string name="search_hint">Найти свою тренировку</string>
+    <string name="duration">Длительность:</string>
+    <string name="minutes">минуты</string>
+
+
+    <!-- Training Screen -->
+    <string name="video_upload_error">Ошибка загрузки видео</string>
+    <string name="no_video_info">Нет информации про видео</string>
 
 </resources>

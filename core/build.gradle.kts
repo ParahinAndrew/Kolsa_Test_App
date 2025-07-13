@@ -41,6 +41,8 @@ dependencies {
 
     implementation(libs.bundles.retrofit)
 
+    implementation(libs.bundles.media3)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
